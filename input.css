@@ -1,0 +1,532 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.main{
+  opacity: 0;
+  display: none;
+transition: opacity 1s ease-in;
+}  
+
+.logo{
+  width: 70px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+@media screen and (max-width: 550px) {
+  .logo{
+    width: 80px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+ }
+
+.navitems::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #fc7b54;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.navitems:hover:after {
+  width: 100%;
+}
+
+.herobg {
+  margin: 0;
+  background-size: cover;
+  background: url("./img/") no-repeat center center fixed;
+  background-color: red;
+  background-blend-mode: color-burn;
+  -webkit-transition: 3s;
+  transition:background-image 3s;
+  border-bottom: #fff;
+  height: 100vh;
+    
+}
+/* linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), */
+
+.custom-shape-divider-bottom-1658269403 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1658269403 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 130px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1658269403 .shape-fill {
+  fill: #fff;
+}
+
+.clippy{
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.btnanimation {
+  display: none;
+}
+
+.dis:hover svg {
+  display: block;
+}
+
+.dis:hover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textshadow {
+  text-shadow: 8px;
+}
+
+.textunderline {
+  text-decoration: underline #fc7b54;
+  text-underline-offset: 1rem;
+}
+
+.secondbg {
+
+  background: url(./img/facilities.jpg);
+  height: 90vh;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.counter1 {
+  background-image: linear-gradient(
+    rgba(4, 9, 30, 0.7),
+    rgba(4, 9, 30, 0.7)
+    ),
+    url(./img/herobg2.JPG);
+  background-position: center;
+  background-position: fixed;
+  background-size: cover;
+  position: relative;
+}
+.contains {
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  background-color: transparent;
+  border-top: 5px solid #fff;
+  border-bottom: 10px solid rgba(128, 16, 197, 0.75);
+}
+
+.rip {
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(252, 123, 84, 0.1),
+      0 0 0 7px rgba(252, 123, 84, 0.1), 0 0 0 14px rgba(252, 123, 84, 0.1),
+      0 0 0 21px rgba(252, 123, 84, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 7px rgba(252, 123, 84, 0.1),
+      0 0 0 14px rgba(252, 123, 84, 0.1), 0 0 0 21px rgba(252, 123, 84, 0.1),
+      0 0 0 28px rgba(252, 123, 84, 0);
+  }
+}
+.fancy-border {
+  border-top: 5px solid;
+  border-image: linear-gradient(
+      to right,
+      #72248c 25%,
+      #fc7b54 25%,
+      #fc7b54 50%,
+      #6aa457 50%,
+      #6aa457 75%,
+      #6797c7 75%
+    )
+    5;
+}
+.scroll-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #92278f;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  line-height: 50px;
+  position: fixed;
+  top: 85%;
+  right:5%;
+  text-decoration: none;
+  z-index: 999;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.scroll-top:hover {
+  background-color: #92278f;
+}
+
+.scroll-top.open {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.scroll-top:hover,
+.scroll-top:focus {
+  color: #fff;
+}
+.banner {
+  animation: bandisplay 1s forwards;
+  animation-delay: 0.7s;
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s ease-out;
+  opacity: 0;
+}
+
+.banner1 {
+  animation: bandisplay 1s forwards;
+  animation-delay: 1s;
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s ease-out;
+  opacity: 0;
+}
+
+.banner2 {
+  animation: bandisplay 1s forwards;
+  animation-delay: 1.3s;
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s ease-out;
+  opacity: 0;
+}
+
+@keyframes bandisplay {
+  0% {
+    transform: translateY(-125px);
+    -webkit-transform: translateY(-125px);
+  }
+
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.ball {
+  animation-name: bounce;
+  animation-duration: 0.6s;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, -13px, 0);
+    transform: translate3d(0, -13px, 0);
+  }
+}
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.revealleft {
+  position: relative;
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.revealleft.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.revealright {
+  position: relative;
+  transform: translate3d(-2.7rem, -10rem, 1rem);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.revealright.active {
+  transform: translate3d(0, 0,0);
+  opacity: 1;
+}
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 3px;
+
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.close {
+    display: none;
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+    z-index: 999;
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+
+    .headerbg {
+        background-color: #fff;
+        background-position: fixed;
+        width: 100%;
+        box-shadow: 8px;
+        position:fixed;
+        top: 0;
+        z-index: 99;
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+        }
+    
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+    .fadeInDown {
+        -webkit-animation-name: fadeInDown;
+        animation-name: fadeInDown;
+    }
+    
+    .menu-fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: auto;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        z-index: 99;
+        -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+    }
+
+.boxshad{
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}  
+
+.show {
+    transition: 1s;
+  
+}
+.sidebar{
+    transition: right .5s;
+    right:-250px 
+}
+.change{
+    right:0;
+}
+
+
+/* ABOUT US */
+.aboutusbg{
+
+  background:linear-gradient( rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(./img/element5-digital-OyCl7Y4y0Bk-unsplash.jpg);
+  height: 80vh;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; 
+  border-bottom: #FFFFFF;
+}
+.custom-shape-divider-bottom-1658508876 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1658508876 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 129px;
+}
+
+.custom-shape-divider-bottom-1658508876 .shape-fill {
+  fill: #FFFFFF;
+}
+.aboutsecondbg {
+  background: linear-gradient( rgba(4, 9, 30, 0.7),  rgba(4, 9, 30, 0.7)),  url(./img/herobg2.JPG);
+  height: 90vh;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+ position: relative;
+  background-repeat: no-repeat;
+  
+}
+@media screen and (min-width: 1024px) {
+  .aboutsecondbg {
+    background: linear-gradient( rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),  url(./img/herobg2.JPG);
+    height: 70vh;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+   position: relative;
+    background-repeat: no-repeat;
+    
+  }
+}
+.aboutcard{
+  background:rgba(255,255,255, 0.55);
+}
+
+/* Admission Inquiry */
+.admissionbg{
+  background:linear-gradient( rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(./img/leon-wu-LLfRMRT-9AY-unsplash.jpg);
+  height: 80vh;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; 
+  border-bottom: #FFFFFF;
+}
+.custom-shape-divider-bottom-1658546575 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1658546575 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 95px;
+}
+
+.custom-shape-divider-bottom-1658546575 .shape-fill {
+  fill: #FFFFFF;
+}
+.admissionsecondbg {
+  background: linear-gradient( rgba(4, 9, 30, 0.7),  rgba(4, 9, 30, 0.7)),  url(./img/admissionbg2.JPG);
+  height: 30vh;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+ position: relative;
+  background-repeat: no-repeat;
+  
+}
+@media screen and (max-width: 550px) {
+ .left{
+  left: 10%;
+ }
+}
+
+/* Gallery */
+.gallerybg{
+  background:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(./img/leon-wu-LLfRMRT-9AY-unsplash.jpg);
+  height: 60vh;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; 
+  border-bottom: #FFFFFF;
+}
+
+
+.icon {
+  display: block;
+  color: #fff;
+  text-align: center;
+
+}
+
+.icon:before {
+  font-size: 2rem;
+  font-weight: 400;
+}
