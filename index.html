@@ -677,6 +677,11 @@
         <!-- COUNTER -->
           <div id="sectioncounter"
               class=" grid justify-center grid-row-4 gap-y-8 lg:grid-rows-none lg:flex lg:gap-x-24 pb-5 ">
+              <div class=" w-[10em] h-[10em]  contains rounded-full lg:mt-5 rip revealleft">
+                <i class="icon flaticon-school-bus  py-1"></i>
+                <span class="grid text-redfont text-4xl font-arima place-items-center font-semibold counter"  data-target="6">0</span>
+                <span class=" font-normal text-white text-base font-quicksand py-[0.3em] text-center">Shuttle</span>
+              </div>
               <div class="w-[10em] h-[10em]  contains rounded-full mt-5 rip revealleft  ">
                   <i class="icon flaticon-construction py-1 "></i>
                     <span  class="grid  text-redfont text-4xl font-arima place-items-center font-semibold counter" data-target="23" >0</span>
@@ -693,12 +698,6 @@
                   <i class="icon flaticon-student  py-1"></i>
                   <span class="grid text-redfont text-4xl font-arima place-items-center font-semibold counter"  data-target="100">0</span>
                   <span class=" font-normal text-white text-base font-quicksand py-[0.7em] mb-2 text-center">Academic Value</span>
-              </div>
-    
-              <div class=" w-[10em] h-[10em]  contains rounded-full lg:mt-5 rip revealleft">
-                  <i class="icon flaticon-school-bus  py-1"></i>
-                  <span class="grid text-redfont text-4xl font-arima place-items-center font-semibold counter"  data-target="6">0</span>
-                  <span class=" font-normal text-white text-base font-quicksand py-[0.3em] text-center">Shuttle</span>
               </div>
           </div>
     
@@ -762,7 +761,7 @@
                       ease-in-out
                       m-0
                       focus:text-gray-700 focus:bg-white focus:border-[#72248c] focus:outline-none"
-                            id="exampleInput7" placeholder="Name">
+                            id="exampleInput7" placeholder="Name" required>
                     </div>
                     <div class="form-group mb-6">
                         <input type="number" name="phone-number" class="form-control block
@@ -779,7 +778,7 @@
                       ease-in-out
                       m-0
                       focus:text-gray-700 focus:bg-white focus:border-[#72248c] focus:outline-none"
-                            id="exampleInput8" placeholder="Phone Number *required*">
+                            id="exampleInput8" placeholder="Phone Number" required>
                     </div>
                     <div class="form-group mb-6">
                         <textarea  name="message" type="text" class="
@@ -932,7 +931,7 @@
   tl.from(".animatedlogo",{y:-50, opacity:0}, 5.3)
     .from(".animatedlistitems", { x:-50, opacity:0, duration:1.5,stagger:.5},"-=2")
     .from(".animatedlistitems1", { y:-70, opacity:0, duration:1.5},"-=4.1")
-    .to('.clippy',{"clip-path": " polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", opacity: 1, y:0, duration:3.2},"-=4.6")
+    .to('.clippy',{"clip-path": " polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", opacity: 1, y:0, duration:4.5},"-=4.6")
     .from('.animatedbutton',{y:200, opacity:0, ease: "back.out", duration:3 },"-=4");
    
 </script>

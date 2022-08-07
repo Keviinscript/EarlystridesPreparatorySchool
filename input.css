@@ -258,8 +258,8 @@ transition: opacity 1s ease-in;
   }
 
   to {
-    transform: translate3d(0, -13px, 0);
-    transform: translate3d(0, -13px, 0);
+    transform: translate3d(0, 13px, 0);
+    transform: translate3d(0, 13px, 0);
   }
 }
 .reveal {
