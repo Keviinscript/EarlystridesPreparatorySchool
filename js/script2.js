@@ -7,7 +7,7 @@
     var facility1 = $(".spin1");
     var facility2 = $(".spin2");
     
-  // scroll-up button and navbar position on scroll
+  
     $(window).on("scroll", function () {
       if ($(this).scrollTop() > 200) {
         fixed_top.addClass(" fadeInDown menu-fixed headerbg");
@@ -52,14 +52,14 @@
     $(prevSecond).prevAll().removeClass().addClass("hideLeft");
   }
   
-  // Eventos teclado
+ 
   $(document).keydown(function (e) {
     switch (e.which) {
-      case 37: // left
+      case 37: 
         moveToSelected("prev");
         break;
   
-      case 39: // right
+      case 39: 
         moveToSelected("next");
         break;
   
@@ -69,14 +69,7 @@
     e.preventDefault();
   });
 
-  // $("#carousel div.selected").mouseenter(
-  //   function(){
-  //       $("#carousel div.selected").css({transform :"scale3d(1.3, 1.3, 1.3)"})
-  //   }
-  // ).mouseleave(
-  //   function(){
-  //       $("#carousel div.selected").css({transform :"scale3d(1,1,1)"})
-  //   })
+ 
 
 
   
@@ -92,6 +85,5 @@
     moveToSelected("next");
   });
 
- // JQUERY MUST BE LINKED AND ADDED TO THE TOP OF THE HTML SCRIPTS LINK
 
 

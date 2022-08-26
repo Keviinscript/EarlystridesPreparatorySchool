@@ -56,7 +56,6 @@ transition: opacity 1s ease-in;
   height: 100vh;
     
 }
-/* linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), */
 
 
 .custom-shape-divider-bottom-1658269403 {
@@ -252,12 +251,6 @@ transition: opacity 1s ease-in;
 
 .ball {
   animation: bounce 2s ease-in-out infinite;
-  /* animation-name: bounce ease-in-out; */
-  /* animation-duration: 4s; */
-  /* animation-delay: 2s; */
-  /* animation-direction: e; */
-  /* animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5); */
-  /* animation-iteration-count: infinite; */
 }
 
 @keyframes bounce {
@@ -410,19 +403,9 @@ transition: opacity 1s ease-in;
 }
 .change{
     right:0;
-    /* filter: brightness(1); */
+    
 }
 
-/* .rbright{
-  filter: brightness(50%);
-} */
-
-/* .rdull{
-  filter: contrast(50%);
-} */
-
-
-/* ABOUT US */
 .aboutusbg{
 
   background:linear-gradient( rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(./img/bc75517a-8156-4160-983f-257c74b9889d.JPG);
@@ -479,7 +462,7 @@ transition: opacity 1s ease-in;
   background:rgba(255,255,255, 0.55);
 }
 
-/* Admission Inquiry */
+
 .admissionbg{
   background:linear-gradient( rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(./img/bc75517a-8156-4160-983f-257c74b9889d.JPG);
   height: 80vh;
@@ -525,7 +508,7 @@ transition: opacity 1s ease-in;
  }
 }
 
-/* Gallery */
+
 .gallerybg{
   background:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(./img/bc75517a-8156-4160-983f-257c74b9889d.JPG);
   height: 60vh;

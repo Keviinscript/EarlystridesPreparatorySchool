@@ -1,19 +1,16 @@
-//LOADER
+
 const loader = document.querySelector(".loader");
 const main = document.querySelector(".main")
 
 function init() {
     setTimeout(() => {
-        loader.style.opacity = 0;
-        loader.style.display = 'none'
-        main.style.display = 'block';
         setTimeout(() => main.style.opacity = 1, 50);
     }, 5000);
 }
 
 init()
 
-//change bg img
+
 const herobg =document.querySelector(".herobg")
 
 var bgImageArray = ["herobg.jpg",
@@ -25,7 +22,7 @@ base = "./img/",
 secs = 6;
 bgImageArray.forEach(function(img){
     new Image().src = base + img; 
-    // caches images, avoiding white flash between background replacements
+    
 });
 
 function backgroundSequence() {
@@ -47,7 +44,7 @@ function backgroundSequence() {
 }
 backgroundSequence();
 
-//REVEAL ELEMENTS 
+ 
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
 
@@ -102,25 +99,28 @@ function revealRight() {
 
 window.addEventListener("scroll", revealRight);
 
-//scroll btn
+
 let mybutton = document.getElementById("myBtn");
 
 function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;
 }
 
 
-// HAMBURGER MENU FOR MOBILE SCREEN
-const btn = document.getElementById("menu-btn");
 
-document.querySelector(".hamburger").addEventListener("click", function () {
-    document.querySelector("#menu").classList.toggle("change")
+const btn = document.getElementById("menu-btn");
+const menuSpan = document.querySelectorAll(".hamburger span")
+const mainMenu = document.querySelector(".hamburger")
+
+mainMenu.addEventListener("click", () => {
+    document.querySelector("#menu").classList.toggle("change");
     btn.classList.toggle("open");
+    
 })
 
-//COUNTER JS
-let sectionCounter = document.querySelector('#sectioncounter')
+
+let sectionCounter = document.querySelector('.sectioncounter')
 let counters = document.querySelectorAll('.counter')
 
 let counterObserver = new IntersectionObserver((entries, observer) => {
