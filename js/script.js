@@ -4,7 +4,7 @@ const main = document.querySelector(".main")
 
 function init() {
     setTimeout(() => {
-        setTimeout(() => main.style.opacity = 1, 50);
+       
     }, 5000);
 }
 
