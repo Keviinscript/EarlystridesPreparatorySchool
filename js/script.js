@@ -13,6 +13,7 @@ function init() {
 
 init()
 
+//change bg img
 const herobg =document.querySelector(".herobg")
 
 var bgImageArray = ["herobg.jpg",
@@ -101,7 +102,7 @@ function revealRight() {
 
 window.addEventListener("scroll", revealRight);
 
-
+//scroll btn
 let mybutton = document.getElementById("myBtn");
 
 function topFunction() {
@@ -116,7 +117,6 @@ const btn = document.getElementById("menu-btn");
 document.querySelector(".hamburger").addEventListener("click", function () {
     document.querySelector("#menu").classList.toggle("change")
     btn.classList.toggle("open");
-
 })
 
 //COUNTER JS

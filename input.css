@@ -49,7 +49,6 @@ transition: opacity 1s ease-in;
   margin: 0;
   background-size: cover;
   background: url("./img/") no-repeat center center fixed;
-  background-color: red;
   background-blend-mode: color-burn;
   -webkit-transition: 3s;
   transition:background-image 3s;
@@ -58,6 +57,7 @@ transition: opacity 1s ease-in;
     
 }
 /* linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), */
+
 
 .custom-shape-divider-bottom-1658269403 {
   position: absolute;
@@ -101,8 +101,9 @@ transition: opacity 1s ease-in;
   justify-content: space-between;
 }
 
+
 .textshadow {
-  text-shadow: 8px;
+  text-shadow: 2px 2px #000;
 }
 
 .textunderline {
@@ -110,8 +111,15 @@ transition: opacity 1s ease-in;
   text-underline-offset: 1rem;
 }
 
-.secondbg {
+.galbg {
+  background:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),  url(./img/bc75517a-8156-4160-983f-257c74b9889d.JPG);
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 
+.secondbg {
   background: url(./img/facilities.jpg);
   height: 90vh;
   background-position: center top;
@@ -243,24 +251,25 @@ transition: opacity 1s ease-in;
 }
 
 .ball {
-  animation-name: bounce;
-  animation-duration: 0.6s;
-  animation-delay: 2s;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
-  animation-iteration-count: infinite;
+  animation: bounce 2s ease-in-out infinite;
+  /* animation-name: bounce ease-in-out; */
+  /* animation-duration: 4s; */
+  /* animation-delay: 2s; */
+  /* animation-direction: e; */
+  /* animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5); */
+  /* animation-iteration-count: infinite; */
 }
 
 @keyframes bounce {
-  from {
-    transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    transform: translate3d(0, 13px, 0);
-    transform: translate3d(0, 13px, 0);
-  }
+  0%{
+    transform: translate(0, -44%);
+}
+50%{
+    transform: translate(0, -54%);
+}
+100%{
+    transform: translate(0, -44%);
+}
 }
 .reveal {
   position: relative;
@@ -372,7 +381,7 @@ transition: opacity 1s ease-in;
     }
     .fadeInDown {
         -webkit-animation-name: fadeInDown;
-        animation-name: fadeInDown;
+        animation-name: fadeInDown ;
     }
     
     .menu-fixed {
@@ -388,7 +397,7 @@ transition: opacity 1s ease-in;
     }
 
 .boxshad{
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
 }  
 
 .show {
@@ -401,13 +410,22 @@ transition: opacity 1s ease-in;
 }
 .change{
     right:0;
+    /* filter: brightness(1); */
 }
+
+/* .rbright{
+  filter: brightness(50%);
+} */
+
+/* .rdull{
+  filter: contrast(50%);
+} */
 
 
 /* ABOUT US */
 .aboutusbg{
 
-  background:linear-gradient( rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(./img/element5-digital-OyCl7Y4y0Bk-unsplash.jpg);
+  background:linear-gradient( rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(./img/bc75517a-8156-4160-983f-257c74b9889d.JPG);
   height: 80vh;
   background-position: center top;
   background-size: cover;
@@ -463,9 +481,9 @@ transition: opacity 1s ease-in;
 
 /* Admission Inquiry */
 .admissionbg{
-  background:linear-gradient( rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(./img/leon-wu-LLfRMRT-9AY-unsplash.jpg);
+  background:linear-gradient( rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(./img/bc75517a-8156-4160-983f-257c74b9889d.JPG);
   height: 80vh;
-  background-position: center top;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat; 
@@ -509,7 +527,7 @@ transition: opacity 1s ease-in;
 
 /* Gallery */
 .gallerybg{
-  background:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(./img/leon-wu-LLfRMRT-9AY-unsplash.jpg);
+  background:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(./img/bc75517a-8156-4160-983f-257c74b9889d.JPG);
   height: 60vh;
   background-position: center top;
   background-size: cover;
